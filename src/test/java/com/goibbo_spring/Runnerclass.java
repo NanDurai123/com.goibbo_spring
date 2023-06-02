@@ -30,11 +30,13 @@ public class Runnerclass extends Baseclass {
 	@Test(priority=5)
 	private void biilingaddress() {
 		
+		System.out.println("wecome");
 
 		inputValues(pom.getBilligaddress(), "chennai");
 		inputValues(pom.getPincode(), "631205");
 		dropDown(pom.getSelectstate(), "text", "tamilnadu");
 		clickOnElement(pom.getBiilingandsave());
+		
 	}
 	@Test(priority=6)
 		private void adultdetail() {

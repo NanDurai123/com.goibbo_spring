@@ -8,32 +8,37 @@ import org.openqa.selenium.support.PageFactory;
 
 public class PomClass {
 	public WebDriver driver;
-
+	
+	
 	@FindBy(xpath = "//button[@color='#2a76e3']")
 	private WebElement assured;
 	
-	@FindBy(xpath = "//span[@class='sc-jxOSlx hDFeQG']")
+	@FindBy(xpath = "(//div[@class='sc-esYiGF bNnNjz'])[1]")
 	private WebElement billigaddress;
 	
-	@FindBy(id = "Pincode")
+	@FindBy(xpath = "(//div[@class='sc-esYiGF bNnNjz'])[2]")
 	private WebElement pincode;
 	
-	@FindBy(xpath = "//p[@class='sc-hknOHE dIaXaQ']")
+	@FindBy(xpath = "//div[@class='sc-fjvvzt jKPzUX']")
 	private WebElement selectstate;
 	
 	@FindBy(xpath = "//span[@class='sc-jxOSlx hDFeQG']")
 	private WebElement biilingandsave;
 	
+	
 	public WebElement getBiilingandsave() {
 		return biilingandsave;
 	}
-	@FindBy(xpath = "padL20 padR20 font14")
+
+	public void setBiilingandsave(WebElement biilingandsave) {
+		this.biilingandsave = biilingandsave;
+	}
+	@FindBy(xpath = "//div[@class='traveller-detailsstyles__TravellerHd-sc-1xqbced-8 cxctgQ dF alignItemsCenter']")
 	private WebElement addult1;
 	
-	@FindBy(xpath = "//span[@class='sc-jxOSlx hDFeQG']")
-	private WebElement confirmandsave;
 	
-	@FindBy(xpath = "//div[@class='padR10']")
+	
+	@FindBy(xpath = "//select[@class='common-elementsstyles__CustSelectTrvl-sc-ilw4bs-9 lpjPee']")
 	private WebElement adulttitle1;
 	
 	
@@ -43,10 +48,10 @@ public class PomClass {
 	@FindBy(name = "lastname")
 	private WebElement lastname1;
 	
-	@FindBy(xpath ="(//div[@class='dF'])[3]")
+	@FindBy(xpath ="(//div[@class='traveller-detailsstyles__TravellerHd-sc-1xqbced-8 cxctgQ dF alignItemsCenter'])[2]")
 	private WebElement addult2;
 	
-	@FindBy(xpath = "//div[@class='padR10']")
+	@FindBy(xpath = "//select[@class='common-elementsstyles__CustSelectTrvl-sc-ilw4bs-9 lpjPee']")
 	private WebElement adulttitle2;
 	
 	@FindBy(name = "givenname")
@@ -55,10 +60,10 @@ public class PomClass {
 	@FindBy(xpath ="lastname")
 	private WebElement lastname2; 
 	
-	@FindBy(xpath = "(//div[@class='dF'])[4]")
+	@FindBy(xpath = "(//div[@class='traveller-detailsstyles__TravellerHd-sc-1xqbced-8 cxctgQ dF alignItemsCenter'])[3]")
 	private WebElement addult3;
 	
-	@FindBy(xpath = "//div[@class='padR10']")
+	@FindBy(xpath = "//select[@class='common-elementsstyles__CustSelectTrvl-sc-ilw4bs-9 lpjPee']")
 	private WebElement addulttitle3;
 	
 	@FindBy(name = "givenname")
@@ -66,10 +71,10 @@ public class PomClass {
 	
 	@FindBy(xpath ="lastname")
 	private WebElement lastname3; 
-	@FindBy(xpath = "(//div[@class='dF'])[5]")
+	@FindBy(xpath = "(//div[@class='traveller-detailsstyles__TravellerHd-sc-1xqbced-8 cxctgQ dF alignItemsCenter'])[4]")
 	private WebElement addult4;
 	
-	@FindBy(xpath = "//div[@class='padR10']")
+	@FindBy(xpath = "//select[@class='common-elementsstyles__CustSelectTrvl-sc-ilw4bs-9 lpjPee']")
 	private WebElement addulttitle4;
 	
 	@FindBy(name = "givenname")
@@ -110,9 +115,7 @@ public class PomClass {
 		return addult1;
 	}
 
-	public WebElement getConfirmandsave() {
-		return confirmandsave;
-	}
+	
 
 	public WebElement getAdulttitle1() {
 		return adulttitle1;

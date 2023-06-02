@@ -5,7 +5,9 @@
     <classes>
       <class name="com.goibbo_spring.Runnerclass">
         <methods>
+          <include name="proceed"/>
           <include name="adultdetail"/>
+          <include name="assured"/>
           <include name="details"/>
           <include name="biilingaddress"/>
         </methods>
